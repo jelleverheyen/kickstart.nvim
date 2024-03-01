@@ -1,10 +1,10 @@
 return {
-  'nvim-treesitter/',
+  'nvim-treesitter/nvim-treesitter',
   build = ':TSBuild',
   config = function()
     require('nvim-treesitter.configs').setup({
       auto_install = true,
-      ensure_installed = { 'vimdoc', 'lua', 'rust', 'bash', 'javascript', 'csharp', 'go' },
+      ensure_installed = { 'vimdoc', 'lua', 'rust', 'bash', 'javascript', 'c_sharp', 'go' },
       sync_install = false,
       indent = {
         enable = true
